@@ -12,7 +12,7 @@ public class GymDataStore
     }
 
     public Boolean addPerson(Integer id, Person person) {
-        Boolean retval = false;
+        boolean retval = false;
         if (!personHashMap.containsKey(id)) {
             personHashMap.put(id, person);
             retval = true;
