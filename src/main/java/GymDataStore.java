@@ -2,7 +2,8 @@ import java.sql.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class GymDataStore {
+public class GymDataStore
+    implements DataStoreReadable, DataStoreWritable {
 
     // TODO: Add your collection here...
     private final HashMap<Integer, Person> personHashMap;
