@@ -22,7 +22,7 @@ public class Main {
     }
 
     private static void addPerson() {
-        System.out.print("Enter user Id, first name, last name, plan: ");
+        System.out.print("Enter user Id, first name, last name");
         var inputString = scanner.nextLine();
         var st = new StringTokenizer(inputString, ",");
         var id = Integer.parseInt(st.nextToken());

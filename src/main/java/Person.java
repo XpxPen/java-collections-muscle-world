@@ -7,9 +7,12 @@ public class Person {
     // Data members
     //
 
+    private Integer id;
     private String firstname;
     private String lastName;
-    private ArrayList<String> checkinTimes;
+
+    // TODO: Add your collection here...
+    private final ArrayList<String> checkinTimes;
 
     //
     // Constructors
@@ -23,6 +26,13 @@ public class Person {
         checkinTimes = new ArrayList<>();
         this.firstname = firstName;
         this.lastName = lastName;
+    }
+
+    public Person(String firstName, String lastName, Integer id) {
+        checkinTimes = new ArrayList<>();
+        this.firstname = firstName;
+        this.lastName = lastName;
+        this.id = id;
     }
 
     //
@@ -55,7 +65,10 @@ public class Person {
 
     @Override
     public String toString() {
-        return firstname + " " + lastName;
+        if (id != null) {
+            return id + " " + firstname + " " + lastName;
+        } else {
+            return firstname + " " + lastName;
+        }
     }
-
 }
