@@ -22,14 +22,14 @@ public class Main {
     }
 
     private static void addPerson() {
-        System.out.print("Enter user Id, first name, last name");
+        System.out.print("Enter user Id, first name, last name: ");
         var inputString = scanner.nextLine();
-        var st = new StringTokenizer(inputString, ",");
-        var id = Integer.parseInt(st.nextToken());
-        var firstName= st.nextToken();
-        var lastName= st.nextToken();
-        var p = new Person(firstName, lastName);
-        gymDatStore.addPerson(id, p);
+        var stringTokenizer = new StringTokenizer(inputString, ",");
+        var id = Integer.parseInt(stringTokenizer.nextToken());
+        var firstName= stringTokenizer.nextToken();
+        var lastName= stringTokenizer.nextToken();
+        var person = new Person(firstName, lastName);
+        gymDatStore.addPerson(id, person);
     }
 
     private static void selectPerson() {
@@ -45,12 +45,12 @@ public class Main {
         System.out.print("Enter user Id, checkin time: ");
         var scanner = new Scanner(System.in);
         var in = scanner.nextLine();
-        var st = new StringTokenizer(in, ",");
-        var userId = st.nextToken();
-        var checkinTime = st.nextToken();
-        var p = gymDatStore.getPerson(Integer.parseInt(userId));
-        p.addCheckinTime(checkinTime);
-        System.out.println(p + " " + checkinTime);
+        var stringTokenizer = new StringTokenizer(in, ",");
+        var userId = stringTokenizer.nextToken();
+        var checkinTime = stringTokenizer.nextToken();
+        var person = gymDatStore.getPerson(Integer.parseInt(userId));
+        person.addCheckinTime(checkinTime);
+        System.out.println(person + " " + checkinTime);
     }
 
     private static void runReport() {
