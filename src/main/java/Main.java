@@ -6,15 +6,16 @@ public class Main {
     private static final GymDataStore gymDatStore = new GymDataStore();
 
     public static void main(String[] args) {
+        System.out.println("*** Muscle World ***");
         var userInput = "";
         while(!userInput.equals("q")) {
             System.out.print("Enter action (a, g, c, r, q): ");
             userInput = scanner.nextLine();
             switch (userInput) {
                 case "a" -> addPerson();
+                case "r" -> runReport();
                 case "g" -> selectPerson();
                 case "c" -> checkinPerson();
-                case "r" -> runReport();
             }
         }
         System.out.println("Bye!");

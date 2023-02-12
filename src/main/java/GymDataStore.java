@@ -11,10 +11,13 @@ public class GymDataStore
         this.personHashMap = new HashMap<Integer, Person>();
     }
 
-    public void addPerson(Integer id, Person person) {
-        // Check if person already exists.
-        // If not, add them to our data store.
-        personHashMap.put(id, person);
+    public Boolean addPerson(Integer id, Person person) {
+        Boolean retval = false;
+        if (!personHashMap.containsKey(id)) {
+            personHashMap.put(id, person);
+            retval = true;
+        }
+        return retval;
     }
 
     public Person getPerson(Integer id) {
