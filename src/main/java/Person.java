@@ -9,8 +9,6 @@ public class Person {
     private Integer id;
     private String firstname;
     private String lastName;
-
-    // TODO: Add your collection here...
     private final ArrayList<String> checkinTimes;
 
     //
