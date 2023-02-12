@@ -8,19 +8,20 @@ public class Main {
     public static void main(String[] args) {
         var userInput = "";
         while(!userInput.equals("q")) {
-            System.out.print("Enter action (r, g, c, q): ");
+            System.out.print("Enter action (a, g, c, r, q): ");
             userInput = scanner.nextLine();
             switch (userInput) {
-                case "r" -> registerPerson();
+                case "a" -> addPerson();
                 case "g" -> selectPerson();
                 case "c" -> checkinPerson();
+                case "r" -> runReport();
             }
         }
         System.out.println("Bye!");
         scanner.close();
     }
 
-    private static void registerPerson() {
+    private static void addPerson() {
         System.out.print("Enter user Id, first name, last name, plan: ");
         var inputString = scanner.nextLine();
         var st = new StringTokenizer(inputString, ",");
@@ -36,8 +37,8 @@ public class Main {
         var scanner = new Scanner(System.in);
         var in = Integer.parseInt(scanner.nextLine());
         var p = gymDatStore.getPerson(in);
-        System.out.println("Name :" + p);
-        System.out.println("Num Visits: " + p.getNumCheckins());
+        System.out.println("Name:" + p);
+        System.out.println("Num visits: " + p.getNumCheckins());
     }
 
     private static void checkinPerson() {
@@ -47,11 +48,17 @@ public class Main {
         var st = new StringTokenizer(in, ",");
         var userId = st.nextToken();
         var checkinTime = st.nextToken();
-
         var p = gymDatStore.getPerson(Integer.parseInt(userId));
         p.addCheckinTime(checkinTime);
+        System.out.println(p + " " + checkinTime);
+    }
 
-        System.out.println(p);
+    private static void runReport() {
+        System.out.println("*** Muscle World Report ****");
+        var peopleList = gymDatStore.getAllPeople();
+        for (Person p : peopleList) {
+            System.out.println(p);
+        }
     }
 }
 

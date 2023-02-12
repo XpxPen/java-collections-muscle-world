@@ -1,3 +1,5 @@
+import java.sql.Array;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class GymDataStore {
@@ -19,4 +21,12 @@ public class GymDataStore {
         return personHashMap.get(id);
     }
 
+    public ArrayList<Person> getAllPeople() {
+        ArrayList<Person> retval = new ArrayList<Person>();
+        var keys = personHashMap.keySet();
+        for (Integer key : keys) {
+            retval.add(personHashMap.get(key));
+        }
+        return retval;
+    }
 }
