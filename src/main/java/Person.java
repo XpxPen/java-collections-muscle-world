@@ -45,18 +45,6 @@ public class Person {
     }
 
     //
-    // Accessors
-    //
-
-    public String getFirstname() {
-        return firstname;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    //
     // Overrides
     //
 
