@@ -21,14 +21,8 @@ The console application has 6 actions:
 
 ### Add
 ```
-*** Muscle World ***
 Enter action (a, g, c, r, d, q): a
 Enter user Id, first name, last name: 1, Alice, Jones
-Enter action (a, g, c, r, d, q): a
-Enter user Id, first name, last name: 2, Bob, Marley
-Enter action (a, g, c, r, d, q): a
-Enter user Id, first name, last name: 3, Charlie, Daniels
-Enter action (a, g, c, r, d, q): 
 ```
 
 ### Get
