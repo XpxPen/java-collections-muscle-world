@@ -59,8 +59,8 @@ public class MuscleWorldApp {
         var inputString = scanner.nextLine();
         var stringTokenizer = new StringTokenizer(inputString, ",");
         var userId = Integer.parseInt(stringTokenizer.nextToken());
-        var firstName= stringTokenizer.nextToken();
-        var lastName= stringTokenizer.nextToken();
+        var firstName= stringTokenizer.nextToken().strip();
+        var lastName= stringTokenizer.nextToken().strip();
         var person = new Person(firstName, lastName);
         gymDataStore.addPerson(userId, person);
     }
@@ -69,7 +69,7 @@ public class MuscleWorldApp {
         System.out.print("Enter user Id: ");
         var in = Integer.parseInt(scanner.nextLine());
         var person = gymDataStore.getPerson(in);
-        System.out.println("Name:" + person);
+        System.out.println("Name: " + person);
         System.out.println("Num visits: " + person.getNumCheckins());
     }
 
@@ -78,7 +78,7 @@ public class MuscleWorldApp {
         var in = scanner.nextLine();
         var stringTokenizer = new StringTokenizer(in, ",");
         var userId = stringTokenizer.nextToken();
-        var checkinTime = stringTokenizer.nextToken();
+        var checkinTime = stringTokenizer.nextToken().strip();
         var person = gymDataStore.getPerson(Integer.parseInt(userId));
         person.addCheckinTime(checkinTime);
         System.out.println(person + " " + checkinTime);
