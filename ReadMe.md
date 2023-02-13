@@ -1,5 +1,5 @@
 # Java Collections Assignment: Muscle World
-Assignmenta are located here: [./Assignments.md]
+Assignmenta are located [here](./Assignments.md).
 
 # Getting Started
 - Clone this repo
