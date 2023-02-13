@@ -2,8 +2,9 @@
 
 Muscle World is a gym that uses a Java app to keep track of their members.
 
-# Ex 1: Implement collections.
-Implement a collection of your choice in the [GymDataStore](./src/main/java/GymDataStore.java) class.
+# Ex 1: Implement collection.
+Implement a collection of your choice in the [GymDataStore](./src/main/java/GymDataStore.java) class.  This collection
+will act as the primary datastore for the application.
 
 # Ex 2: Modifiy Report
 Modify the report to show the total number of visits for each member.
