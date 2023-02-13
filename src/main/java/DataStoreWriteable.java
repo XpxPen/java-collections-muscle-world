@@ -1,5 +1,4 @@
 public interface DataStoreWriteable {
-
     /**
      * Returns true if a person was successfully added to the datastore, otherwise false.
      * Duplicate user ids are not permitted.

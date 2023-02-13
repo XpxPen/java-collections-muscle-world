@@ -20,16 +20,16 @@ public class Person {
     }
 
     public Person(String firstName, String lastName) {
-        checkinTimes = new ArrayList<>();
-        this.firstname = firstName;
         this.lastName = lastName;
+        this.firstname = firstName;
+        checkinTimes = new ArrayList<>();
     }
 
     public Person(String firstName, String lastName, Integer id) {
-        checkinTimes = new ArrayList<>();
-        this.firstname = firstName;
-        this.lastName = lastName;
         this.id = id;
+        this.lastName = lastName;
+        this.firstname = firstName;
+        checkinTimes = new ArrayList<>();
     }
 
     //
