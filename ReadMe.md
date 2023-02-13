@@ -7,10 +7,10 @@ Assignments are located [here](./Assignments.md).
 # Getting Started
 - Clone this repo
 
-# Actions
-The console app has 6 actions:
+# Application
+The console application has 6 actions:
 
-| -Action- | Description                                          |
+| Action   | Description                                          |
 |----------|------------------------------------------------------|
 | Add      | Adds a new gym member to the system                  |
 | Get      | Gets the information for a gym member                |
@@ -19,9 +19,7 @@ The console app has 6 actions:
 | Delete   | Permanently deletes a gym member from the system     |
 | Quit     | Quits the application                                |
 
-# Examples
-
-### Add three members to the system
+### Add
 ```
 *** Muscle World ***
 Enter action (a, g, c, r, d, q): a
@@ -31,6 +29,41 @@ Enter user Id, first name, last name: 2, Bob, Marley
 Enter action (a, g, c, r, d, q): a
 Enter user Id, first name, last name: 3, Charlie, Daniels
 Enter action (a, g, c, r, d, q): 
+```
+
+### Get
+```
+Enter action (a, g, c, r, d, q): g
+Enter user Id: 1
+Name: Alice Jones
+Num visits: 0
+```
+
+### Check-in
+```
+Enter action (a, g, c, r, d, q): c
+Enter user Id, checkin time: 1, 1:00
+Alice Jones 1:00
+```
+
+### Report
+```
+Enter action (a, g, c, r, d, q): r
+*** Muscle World Report ****
+Alice Jones
+```
+
+### Delete
+````
+Enter action (a, g, c, r, d, q): d
+Enter user Id: 1
+Deleted person.
+````
+
+### Quit
+```
+Enter action (a, g, c, r, d, q): q
+Bye!
 ```
 
 
