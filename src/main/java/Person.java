@@ -33,7 +33,7 @@ public class Person {
     }
 
     //
-    // Methods
+    // Public methods
     //
 
     public void addCheckinTime(String time) {
