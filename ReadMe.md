@@ -1,29 +1,23 @@
-# Java Collections Assignment: Muscle World
-Assignmenta are located [here](./Assignments.md).
+# Java Collections Muscle World
+Muscle World is a gym that uses a Java console app to keep track of their members.  The application can add, remove,
+recall and check-in members into the facility.
+
+Assignments are located [here](./Assignments.md).
 
 # Getting Started
 - Clone this repo
 
-# Overview
-Muscle World is a gym that uses a Java console app to keep track of their members.  The console app has 6 actions:
+# Actions
+The console app has 6 actions:
 
-### Add
-Adds a new gym member to the system.
-
-### Get
-Gets the information for a gym member.
-
-### Checkin
-Logs when a gym member has checked into the facility.
-
-### Report
-Displays a report of all the gym members.
-
-### Delete
-Permanently deletes a gym member from the system.
-
-### Quit
-Quits the application.
+| -Action- | Description                                          |
+|----------|------------------------------------------------------|
+| Add      | Adds a new gym member to the system                  |
+| Get      | Gets the information for a gym member                |
+| Check-in | Logs when a gym member has checked into the facility |
+| Report   | Displays a report of all the gym members             |
+| Delete   | Permanently deletes a gym member from the system     |
+| Quit     | Quits the application                                |
 
 # Examples
 
@@ -38,7 +32,6 @@ Enter action (a, g, c, r, d, q): a
 Enter user Id, first name, last name: 3, Charlie, Daniels
 Enter action (a, g, c, r, d, q): 
 ```
-
 
 
 # Notes
