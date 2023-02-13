@@ -1,7 +1,7 @@
 # Java Collection Muscle World Assignments
 Muscle World is a gym that uses a Java app to keep track of their members.
 
-# Ex 1: Implement collection: GymDataStore
+# Ex 1: Implement Collection: GymDataStore
 Implement a collection of your choice in the [GymDataStore](./src/main/java/GymDataStore.java) class.  This collection  
 acts as the primary datastore for the application.  Test the following actions:
 - Add
@@ -9,7 +9,7 @@ acts as the primary datastore for the application.  Test the following actions:
 - Delete
 - Report
 
-# Ex 2: Implement collection: Person
+# Ex 2: Implement Collection: Person
 Implement a collection of your choice in the [Person](./src/main/java/Person.java) class. Test the following actions:
 - Check-in
 - Report
