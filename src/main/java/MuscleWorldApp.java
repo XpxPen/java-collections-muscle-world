@@ -38,7 +38,6 @@ public class MuscleWorldApp {
             }
         }
         System.out.println("Bye!");
-        scanner.close();
     }
 
     //
