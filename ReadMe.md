@@ -61,7 +61,7 @@ Enter action (a, g, c, r, d, q): q
 Bye!
 ```
 
-# Archicture
+# Architecture
 ...
 
 
